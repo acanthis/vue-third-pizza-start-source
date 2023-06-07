@@ -5,11 +5,11 @@ const config = {
   name: 'database',
   connector: 'postgresql',
   url: '',
-  host: 'db',
+  host: '192.168.100.17',
   port: 5432,
-  user: 'postgres',
-  password: 'psql',
-  database: 'pizza',
+  user: 'ipsp',
+  password: 'secret',
+  database: 'vue_pizza',
 };
 
 // Observe application's life cycle to disconnect the datasource when

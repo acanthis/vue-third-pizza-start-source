@@ -16,10 +16,10 @@ export default defineConfig({
   },
   server: {
     host: true,
-    port: 8080,
+    port: 8181,
     proxy: {
       "/api": {
-        target: "http://backend:3000/",
+        target: "http://backend:3001/",
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
     },
