@@ -17,15 +17,14 @@
             </router-link>
         </template>
 
-        <!--  Здесь будут располагаться компоненты дочерних маршрутов  -->
-        <router-view />
+        <router-view/>
     </sidebar-layout>
 </template>
 
 <script setup>
 import SidebarLayout from "@/layouts/SidebarLayout.vue";
-import { useRoute } from "vue-router";
-import { computed } from "vue";
+import {useRoute} from "vue-router";
+import {computed} from "vue";
 
 const route = useRoute();
 

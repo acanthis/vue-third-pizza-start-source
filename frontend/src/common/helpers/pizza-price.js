@@ -1,5 +1,5 @@
-import { useDataStore } from "@/stores/data";
-import { ingredientsQuantity } from "@/common/helpers/ingredients-quantity";
+import {useDataStore} from "@/stores/data";
+import {ingredientsQuantity} from "@/common/helpers/ingredients-quantity";
 
 export const pizzaPrice = (pizza) => {
     const data = useDataStore();
@@ -16,7 +16,7 @@ export const pizzaPrice = (pizza) => {
 
     /*
      * Здесь мы при помощи метода map превращаем массив ингредиентов
-     * в массив значений, соответствующих итоговой стоимости каждого ингредиента — просто умножаем известную цену на количество.
+     * в массив значений, соответствующих итоговой стоимости каждого из них - просто умножив известную цену на количество.
      * После чего методом reduce вычисляем сумму всех элементов массива, что даст нам общую стоимость всех ингредиентов.
      */
     const ingredientsPrice = data.ingredients
